@@ -27,8 +27,8 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">About Us</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="markup/index1.html" class="nav__link">About Us</a></li>
+                    <li class="nav__item"><a href="#my-service" class="nav__link">Services</a></li>
                     <li class="nav__item"><a href="#ourWork" class="nav__link">Our Works</a></li>
                     <li class="nav__item"><a href="#academy" class="nav__link">Academy</a></li>
                     <li class="nav__item"><a href="#contactUs" class="nav__link">Contact Us</a></li>
@@ -44,6 +44,10 @@
     <main class="l-main">
         <!-- HOME -->
         <section class="home" id="home">
+            <div class="home__video">
+                <video src="video/LB DTL MAIN.mp4" controls autoplay loop></video>
+            </div>
+
             <div class="home__container bd-container bd-grid">
                 <div class="home__img">
                     <img src="images/mylbdigital.com 10-1.png" alt="image pressing a laptop">
@@ -164,11 +168,79 @@
             </div>
         </div>
 
-        <!-- SCROLL REVEAL -->
-        <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonial section bd-container" id="my-testimonial">
+            <h2 class="section-title services__heading">Testimonials</h2>
+            <div class="testimonial__container bd-grid">
+                <div class="testimonial__data">
+                    <p>LBDIGITAL was and still is the best choice I have made for my NGO. They have a wau of
+                        interpreting your ideas
+                        into a beautiful brand. And I also enjoy great customer service.
+                    </p>
+                    <h3 class="testimonial__title">--Nimot Awoniyi</h3>
+                </div>
+                <div>
+                    <div class="testimonial__data">
+                        <p>I strongly recommend LBDigital for your website design and digital marketing. They deliver
+                            top-notch service
+                            for me. Their customer's services and delivery are outstanding.
+                        </p>
+                        <h3 class="testimonial__title">--Tope Olaleye</h3>
+                    </div>
+                </div>
+            </div>
 
-        <!-- MAIN JS -->
-        <script src="js/app.js"></script>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer section">
+        <div class="footer__container bd-container bd-grid">
+            <div class="footer__content">
+                <h2 class="footer__title">
+                    <a href="#" class="footer__logo">LBDIGITAL</a>
+                </h2>
+                <p class="footer__description">Best Results <br> which gives you happiness</p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Services</h3>
+                <ul>
+                    <li><a href="#my-service" class="footer__link">Web Design</a></li>
+                    <li><a href="#my-service" class="footer__link">Social Media Management</a></li>
+                    <li><a href="#my-service" class="footer__link">Social Media Marketing</a></li>
+                    <li><a href="#my-service" class="footer__link">Digital Marketing Consulting</a></li>
+                    <li><a href="#my-service" class="footer__link">Training</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#home" class="footer__link">About us</a></li>
+                    <li><a href="#result" class="footer__link">Our mission</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <a href="#" class="footer__social"><i class='fab fa-facebook'></i></a>
+                <a href="#" class="footer__social"><i class='fab fa-twitter'></i></a>
+                <a href="#" class="footer__social"><i class='fab fa-instagram'></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2022 LBDIGITAL. All right reserved</p>
+    </footer>
+
+
+    <!-- SCROLL REVEAL -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+    <!-- MAIN JS -->
+    <script src="js/app.js"></script>
+
 </body>
 
 </html>

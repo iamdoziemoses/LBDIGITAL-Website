@@ -5,6 +5,7 @@ const navToggle = (toggleId, navId) => {
 
     toggle.addEventListener('click', () => {
         navMenu.classList.toggle('show-menu');
+        toggle.classList.toggle('rotate');
     })
 }
 navToggle('nav-toggle', 'nav-menu');
@@ -85,9 +86,9 @@ function init() {
 }
 
 // SHOW SCROLL TOP 
-function scrollTop(){
+function scrollTop() {
     const scrollTop = document.getElementById('scroll-top');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+    if (this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
