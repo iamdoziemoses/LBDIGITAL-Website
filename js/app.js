@@ -5,7 +5,7 @@ const navToggle = (toggleId, navId) => {
 
     toggle.addEventListener('click', () => {
         navMenu.classList.toggle('show-menu');
-        toggle.classList.toggle('rotate');
+        toggle.classList.toggle('rotate')
     })
 }
 navToggle('nav-toggle', 'nav-menu');
@@ -19,6 +19,23 @@ function linkAction() {
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+
+//Video play
+const myVideo = document.getElementById('my-video');
+const vidIcon = document.getElementById('vid-play');
+const vidPlay = () => {
+
+    if (myVideo.paused) {
+        myVideo.play();
+        vidIcon.remove();
+        myVideo.setAttribute('controls', 'controls')
+    } else {
+        myVideo.pause();
+    }
+}
+
+vidIcon.addEventListener('click', vidPlay);
 
 
 //Typewriting Effect
@@ -92,3 +109,27 @@ function scrollTop() {
     if (this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
+
+
+// SCROLL REVEAL
+// const sr = ScrollReveal({
+//     distance: '30px',
+//     duration: 1800,
+//     reset: true,
+// });
+
+// sr.reveal(`.home__data, .home__img, 
+//            .services__data,
+//            .testimonial__content,
+//            .footer__content`, {
+//     origin: 'top',
+//     interval: 200,
+// })
+
+// sr.reveal(`.business-grow__img, .desired-result__content`, {
+//     origin: 'left'
+// })
+
+// sr.reveal(`.business-grow__data, .desired-result__img`, {
+//     origin: 'right'
+// })
