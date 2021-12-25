@@ -21,21 +21,21 @@ function linkAction() {
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
-//Video play
-const myVideo = document.getElementById('my-video');
-const vidIcon = document.getElementById('vid-play');
-const vidPlay = () => {
+// //Video play
+// const myVideo = document.getElementById('my-video');
+// const vidIcon = document.getElementById('vid-play');
+// const vidPlay = () => {
 
-    if (myVideo.paused) {
-        myVideo.play();
-        vidIcon.remove();
-        myVideo.setAttribute('controls', 'controls')
-    } else {
-        myVideo.pause();
-    }
-}
+//     if (myVideo.paused) {
+//         myVideo.play();
+//         vidIcon.remove();
+//         myVideo.setAttribute('controls', 'controls')
+//     } else {
+//         myVideo.pause();
+//     }
+// }
 
-vidIcon.addEventListener('click', vidPlay);
+// vidIcon.addEventListener('click', vidPlay);
 
 
 //Typewriting Effect
